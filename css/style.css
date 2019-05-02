@@ -17,7 +17,7 @@
     font-weight: 700;
     color: white;
     padding: 19px 0 16px 150px;
-    transition: .2s linear;
+    transition: .2s linear color;
 }
 
 .header-logo:hover {
@@ -35,7 +35,7 @@
     width: 20px;
     height: 20px;
     background-position: -64px -15px;
-    transition: .2s linear;
+    transition: .2s linear background-position;
 }
 
 .calendar-icon:hover {
@@ -46,7 +46,7 @@
     width: 28px;
     height: 20px;
     background-position: -171px -15px;
-    transition: .2s linear;
+    transition: .2s linear background-position;
 }
 
 .forum-icon:hover {
@@ -60,7 +60,7 @@
     border-right: 1px #33312f solid;
     padding-right: 25px;
     margin-right: 0;
-    transition: .2s linear;
+    transition: .2s linear background-position;
 }
 
 .journey-icon:hover {
@@ -115,7 +115,7 @@
 }
 
 .form-header-signup:before {
-    content: '.';
+    content: '';
     font-size: 0;
     border: #3cb878 9px solid;
     position: relative;
@@ -152,6 +152,11 @@
     background-position: center;
 }
 
+.facebook-btn:hover {
+    cursor: pointer;
+    background-color: #264b96;
+}
+
 .google-plus-btn {
     float: right;
     width: 157px;
@@ -174,6 +179,11 @@
     background-image: url("../img/google-plus-icon.png");
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.google-plus-btn:hover {
+    cursor: pointer;
+    background-color: #c3412c;
 }
 
 .form-or-block {
@@ -220,7 +230,7 @@
     border: 1px solid #eaeaea;
     color: #434343;
     outline: none;
-    transition: .2s linear;
+    transition: .2s linear margin-bottom;
 }
 
 .form-signup-input::placeholder {
@@ -245,6 +255,10 @@
     position: relative;
     display: inline-block;
     padding-left: 15px;
+}
+
+.form-signup-checkbox label:hover {
+    cursor: pointer;
 }
 
 .form-signup-checkbox label:before {
@@ -282,13 +296,18 @@
     height: 46px;
     font-size: 16px;
     background-color: #3cb878;
-    border-radius: 3px;
+    border-radius: 5px;
     color: white;
     outline: none;
+    border: none;
 }
 
+.form-signup-submitbtn:hover,
 .form-signup-submitbtn:active {
+    cursor: pointer;
     background-color: #329a65;
+    outline: none;
+    border: none;
 }
 
 .clearfix::after {
