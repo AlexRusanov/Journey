@@ -3,7 +3,7 @@
     background: url("../img/journey-bcg-img.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 912px;
+    height: 100vh;
 }
 
 .header {
@@ -303,7 +303,8 @@
 }
 
 .form-signup-submitbtn:hover,
-.form-signup-submitbtn:active {
+.form-signup-submitbtn:active,
+.form-signup-submitbtn:focus {
     cursor: pointer;
     background-color: #329a65;
     outline: none;
